@@ -20,8 +20,10 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Setup Gradle
+      - name: Setup Gradle (simpan cache)
         uses: gradle/actions/setup-gradle@v6
+        with:
+          cache-read-only: false
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
@@ -34,10 +36,11 @@ jobs:
           mkdir -p dist
           cp app/build/outputs/apk/debug/*.apk "dist/app-debug-${GITHUB_SHA:0:7}.apk"
 
-      - name: Upload debug APK
+      - name: Upload debug APK (tanpa zip)
         uses: actions/upload-artifact@v7
         with:
-          name: app-debug-${{ github.sha }}
+          name: app-debug-${{ github.sha }}.apk
           path: dist/app-debug-*.apk
+          archive: false
           if-no-files-found: error
           retention-days: 30
