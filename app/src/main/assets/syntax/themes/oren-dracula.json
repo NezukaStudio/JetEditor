@@ -1,0 +1,35 @@
+{
+  "name": "Oren Dracula",
+  "editor": {
+    "background": "#FF0E1312",
+    "text": "#FFE1E1DC",
+    "selection": "#663B6FD9",
+    "gutter": "#FF151A19",
+    "gutterLine": "#FF222927",
+    "lineNumber": "#FF5B6462",
+    "lineNumberActive": "#FFC3CAC6",
+    "currentLine": "#0DFFFFFF",
+    "indentGuide": "#1AFFFFFF",
+    "bracketFill": "#33FFFFFF",
+    "bracketStroke": "#66FFFFFF",
+    "scrollbar": "#CCC9CEC9",
+    "scrollbarTrack": "#1CFFFFFF",
+    "iconTint": "#FFDDE0DC",
+    "swatchStroke": "#33FFFFFF"
+  },
+  "tokens": {
+    "keyword": "#FFF4796E",
+    "tag": "#FFF4796E",
+    "constant": "#FFECA05A",
+    "package": "#FFECA05A",
+    "attribute": "#FFECA05A",
+    "type": "#FFC79CF5",
+    "literal": "#FF5AA7F0",
+    "number": "#FF5AA7F0",
+    "string": "#FF9CCB7C",
+    "comment": "#FF8A919D",
+    "declaration": "#FFAAB6F8",
+    "function": "#FFAAB6F8",
+    "annotation": "#FFD8B268"
+  }
+}

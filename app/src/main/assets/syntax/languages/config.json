@@ -1,0 +1,33 @@
+{
+  "name": "config",
+  "extensions": [
+    "properties",
+    "conf",
+    "ini",
+    "yml",
+    "yaml",
+    "toml"
+  ],
+  "rules": [
+    {
+      "scope": "comment",
+      "pattern": "#[^\\n]*"
+    },
+    {
+      "scope": "string",
+      "pattern": "\"(?:\\\\.|[^\"\\\\\\n])*\"?|'(?:\\\\.|[^'\\\\\\n])*'?"
+    },
+    {
+      "scope": "type",
+      "pattern": "\\$\\{?[A-Za-z_][\\w]*\\}?"
+    },
+    {
+      "scope": "number",
+      "pattern": "\\b(?:0[xX][0-9A-Fa-f_]+|\\d[\\d_]*(?:\\.\\d+)?(?:[eE][+-]?\\d+)?)[fFdDlLuU]?\\b"
+    },
+    {
+      "scope": "attribute",
+      "pattern": "^[ \\t]*[\\w.\\-\\[\\]]+(?=[ \\t]*[=:])"
+    }
+  ]
+}

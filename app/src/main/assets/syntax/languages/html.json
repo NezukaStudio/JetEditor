@@ -1,0 +1,39 @@
+{
+  "name": "html",
+  "extensions": [
+    "html",
+    "htm",
+    "svg"
+  ],
+  "hashColorAlphaFirst": true,
+  "rules": [
+    {
+      "scope": "comment",
+      "pattern": "<!--[\\s\\S]*?(?:-->|\\z)"
+    },
+    {
+      "scope": "comment",
+      "pattern": "<\\?[\\s\\S]*?(?:\\?>|\\z)"
+    },
+    {
+      "scope": "string",
+      "pattern": "\"[^\"]*\"|'[^']*'"
+    },
+    {
+      "scope": "tag",
+      "pattern": "</?[A-Za-z][\\w:.-]*"
+    },
+    {
+      "scope": "tag",
+      "pattern": "/?>"
+    },
+    {
+      "scope": "attribute",
+      "pattern": "[A-Za-z_:][\\w:.-]*(?=\\s*=)"
+    },
+    {
+      "scope": "number",
+      "pattern": "&\\w+;"
+    }
+  ]
+}

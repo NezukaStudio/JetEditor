@@ -1,0 +1,35 @@
+{
+  "name": "One Dark",
+  "editor": {
+    "background": "#FF282C34",
+    "text": "#FFABB2BF",
+    "selection": "#663E4451",
+    "gutter": "#FF21252B",
+    "gutterLine": "#FF181A1F",
+    "lineNumber": "#FF4B5263",
+    "lineNumberActive": "#FFABB2BF",
+    "currentLine": "#0DFFFFFF",
+    "indentGuide": "#1AFFFFFF",
+    "bracketFill": "#33FFFFFF",
+    "bracketStroke": "#66FFFFFF",
+    "scrollbar": "#CCC9CEC9",
+    "scrollbarTrack": "#1CFFFFFF",
+    "iconTint": "#FFABB2BF",
+    "swatchStroke": "#33FFFFFF"
+  },
+  "tokens": {
+    "keyword": "#FFC678DD",
+    "tag": "#FFE06C75",
+    "constant": "#FFD19A66",
+    "package": "#FFE5C07B",
+    "attribute": "#FFD19A66",
+    "type": "#FFE5C07B",
+    "literal": "#FF56B6C2",
+    "number": "#FFD19A66",
+    "string": "#FF98C379",
+    "comment": "#FF5C6370",
+    "declaration": "#FF61AFEF",
+    "function": "#FF61AFEF",
+    "annotation": "#FFE5C07B"
+  }
+}

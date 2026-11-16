@@ -1,0 +1,55 @@
+{
+  "name": "shell",
+  "extensions": [
+    "sh",
+    "bash"
+  ],
+  "filenames": [
+    "Makefile",
+    "Dockerfile"
+  ],
+  "rules": [
+    {
+      "scope": "comment",
+      "pattern": "#[^\\n]*"
+    },
+    {
+      "scope": "string",
+      "pattern": "\"(?:\\\\.|[^\"\\\\\\n])*\"?|'(?:\\\\.|[^'\\\\\\n])*'?"
+    },
+    {
+      "scope": "type",
+      "pattern": "\\$\\{?[A-Za-z_][\\w]*\\}?"
+    },
+    {
+      "scope": "number",
+      "pattern": "\\b(?:0[xX][0-9A-Fa-f_]+|\\d[\\d_]*(?:\\.\\d+)?(?:[eE][+-]?\\d+)?)[fFdDlLuU]?\\b"
+    },
+    {
+      "scope": "keyword",
+      "words": [
+        "if",
+        "then",
+        "else",
+        "elif",
+        "fi",
+        "for",
+        "while",
+        "do",
+        "done",
+        "case",
+        "esac",
+        "function",
+        "in",
+        "return",
+        "export",
+        "local",
+        "echo",
+        "exit",
+        "set",
+        "unset",
+        "source"
+      ]
+    }
+  ]
+}
