@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "id": "apksig",
+      "name": "Apksig",
+      "file": "apksig.jar",
+      "url": "https://raw.githubusercontent.com/IqwanXD/Jedit/master/alat-tempur/apksig.jar"
+    },
+    {
+      "id": "ecj",
+      "name": "ECJ",
+      "file": "ecj.jar",
+      "url": "https://raw.githubusercontent.com/IqwanXD/Jedit/master/alat-tempur/ecj.jar"
+    },
+    {
+      "id": "dex_r8",
+      "name": "Dex R8",
+      "file": "dex_r8.jar",
+      "url": "https://raw.githubusercontent.com/IqwanXD/Jedit/master/alat-tempur/dex_r8.jar"
+    },
+    {
+      "id": "jvm_r8",
+      "name": "Jvm R8",
+      "file": "jvm_r8.jar",
+      "url": "https://raw.githubusercontent.com/IqwanXD/Jedit/master/alat-tempur/jvm_r8.jar"
+    },
+    {
+      "id": "lambda",
+      "name": "Lambda",
+      "file": "lambda.jar",
+      "url": "https://raw.githubusercontent.com/IqwanXD/Jedit/master/alat-tempur/lambda.jar"
+    },
+    {
+      "id": "debug_keystore",
+      "name": "Debug keystore",
+      "file": "debug.jks",
+      "url": "https://raw.githubusercontent.com/IqwanXD/Jedit/master/alat-tempur/debug.jks"
+    }
+  ]
+}
