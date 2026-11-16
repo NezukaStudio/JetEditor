@@ -1,0 +1,36 @@
+plugins {
+	id 'com.android.application'
+}
+
+android {
+	compileSdk 33
+    
+    signingConfigs {
+        debug {
+            storeFile file("${rootDir}/debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }    
+	
+	defaultConfig {
+		applicationId "ru.jet.editor"
+		namespace "ru.jet.editor"
+		minSdkVersion 21
+		targetSdkVersion 28
+		versionCode 1
+		versionName "1.0"
+	}
+	
+	buildTypes {
+		release {
+			minifyEnabled true
+			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+		}
+	}
+}
+
+dependencies {
+	implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
