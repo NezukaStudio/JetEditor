@@ -21,7 +21,7 @@ jobs:
           java-version: '17'
 
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
+        uses: gradle/actions/setup-gradle@v6
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
@@ -35,7 +35,7 @@ jobs:
           cp app/build/outputs/apk/debug/*.apk "dist/app-debug-${GITHUB_SHA:0:7}.apk"
 
       - name: Upload debug APK
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: app-debug-${{ github.sha }}
           path: dist/app-debug-*.apk
