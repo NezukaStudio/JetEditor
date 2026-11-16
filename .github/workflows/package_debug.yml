@@ -27,12 +27,12 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build debug APK
-        run: ./gradlew assembleAndroid26Debug --build-cache --stacktrace
+        run: ./gradlew assembleDebug --build-cache --stacktrace
 
       - name: Rename APK ke app-debug-<commit>.apk
         run: |
           mkdir -p dist
-          cp app/build/outputs/apk/android26/debug/*.apk "dist/app-debug-${GITHUB_SHA:0:7}.apk"
+          cp app/build/outputs/apk/debug/*.apk "dist/app-debug-${GITHUB_SHA:0:7}.apk"
 
       - name: Upload debug APK
         uses: actions/upload-artifact@v5
